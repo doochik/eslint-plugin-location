@@ -34,6 +34,14 @@ ruleTester.run("prefer-new-url", rule, {
         {
             code: "window.location.replace.href.replace('foo', 'bar')",
             errors: [{ message: "Use new URL(location) instead" }]
+        },
+        {
+            code: "const newUrl = location.href.replace(/[?&]*action=scroll-to-reports/, '');",
+            errors: [{ message: "Use new URL(location) instead" }]
+        },
+        {
+            code: "const newUrl = window.location.href.replace(/[?&]*action=scroll-to-reports/, '');",
+            errors: [{ message: "Use new URL(location) instead" }]
         }
     ]
 });

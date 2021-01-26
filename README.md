@@ -26,7 +26,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "location/prefer-new-url": "error"
+        "@doochik/location/prefer-new-url": "error"
     }
 }
 ```
