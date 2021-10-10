@@ -31,6 +31,9 @@
   "peerDependencies": {
     "eslint": "^6.0.0 || ^7.0.0 || ^8.0.0"
   },
+  "files": [
+    "lib"
+  ],
   "license": "MIT",
   "directories": {
     "lib": "lib",
