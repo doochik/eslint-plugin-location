@@ -3,9 +3,7 @@
 const rule = require("../../../lib/rules/prefer-new-url"),
     RuleTester = require("eslint").RuleTester;
 
-const ruleTester = new RuleTester({
-    parserOptions: { ecmaVersion: 2015 }
-});
+const ruleTester = new RuleTester();
 
 ruleTester.run("prefer-new-url", rule, {
     valid: [
